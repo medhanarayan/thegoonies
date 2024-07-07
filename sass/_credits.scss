@@ -1,0 +1,242 @@
+.credits
+{ overflow: hidden;
+    .creditbox {
+        display: flex;
+        justify-content: space-between;
+        border:1px dotted rgba(250, 250, 250, 0.15);
+        color:white;
+
+    .creditbox_row1 {
+        display: flex;
+        width: 100vw;
+        height:50vh;
+    }
+    .releasedate {
+    flex: 1;
+    text-align: center;
+ 
+    .image-container {
+        position: relative; /* Set the container to relative positioning */
+        width: 100%; /* Ensure it takes the full width of the container */
+        height: 100%; /* Ensure it takes the full height of the container */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        border:1px dotted rgba(250, 250, 250, 0.15);
+        .releasedateheading{
+            font-size:40px;
+           
+        }
+    .releasepara1{
+        position: absolute; /* Set the <p> elements to absolute positioning */
+        bottom: 57px; /* Position at the bottom of the container */
+        left: 0; /* Position at the left of the container */
+        margin: 0; /* Reset any default margin */
+        font-family: "Sharp Grotesk Book 25 Regular", sans-serif;
+        color: #fff;
+        font-size: 17px;
+        line-height: 23px;
+        font-weight: 400;
+    }
+    .releasepara2{
+        position: absolute; /* Set the <p> elements to absolute positioning */
+        bottom: 0; /* Position at the bottom of the container */
+        left: 0; /* Position at the left of the container */
+    }
+    
+}
+    
+}
+.steven{
+    position: relative;
+    .image-container {
+        position: relative; /* Set the container to relative positioning */
+        width: 100%; /* Ensure it takes the full width of the container */
+        height: 100%; /* Ensure it takes the full height of the container */
+        justify-content: flex-end;
+    text-align: left;
+    border:1px dotted rgba(250, 250, 250, 0.15);
+   
+    .stevenpara1{
+        position: absolute; /* Set the <p> elements to absolute positioning */
+        bottom: 63px; /* Position at the bottom of the container */
+        left: 0; /* Position at the left of the container */
+        margin: 0; /* Reset any default margin */
+        font-family: "Sharp Grotesk Book 25 Regular", sans-serif;
+    color: #fff;
+    font-size: 17px;
+    line-height: 23px;
+    font-weight: 400;
+    }
+    .stevenpara2{
+        position: absolute; /* Set the <p> elements to absolute positioning */
+        bottom: 0; /* Position at the bottom of the container */
+        left: 0; /* Position at the left of the container */
+    }
+}
+}
+
+.production {
+    flex: 2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: left;
+    position: relative;
+    .image-container {
+        position: relative; /* Set the container to relative positioning */
+        width: 100%; /* Ensure it takes the full width of the container */
+        height: 100%; /* Ensure it takes the full height of the container */
+        border:1px dotted rgba(250, 250, 250, 0.15);
+
+   
+    
+    .productionpara1{
+        position: absolute; /* Set the <p> elements to absolute positioning */
+        bottom: 57px; /* Position at the bottom of the container */
+        left: 0; /* Position at the left of the container */
+        margin: 0; /* Reset any default margin */
+        font-family: "Sharp Grotesk Book 25 Regular", sans-serif;
+        color: #fff;
+        font-size: 17px;
+        line-height: 23px;
+        font-weight: 400;
+    }
+    .productionpara2{
+        position: absolute; /* Set the <p> elements to absolute positioning */
+        bottom: 0; /* Position at the bottom of the container */
+        left: 0; /* Position at the left of the container */
+    }
+    img{
+        transform: translateX(50px);
+    }
+}
+    
+}
+    .releasedate,
+    .steven,
+    .production {
+
+    img {
+        max-width: 100%;
+        height: 100%; 
+        opacity: 0.6;
+        transition: transform 0.3s ease-in-out;
+        &:hover{
+            opacity:1;
+            transform: scaleY(1.01);
+
+        }
+    }
+
+}
+}
+.creditbox_row2 {
+    display: flex;
+    border:1px dotted rgba(250, 250, 250, 0.15);
+    color: #fff;
+    width: 99.89vw;
+    height:50vh;
+    overflow: hidden;
+    
+    .warnerbros,
+    .n19M,
+    .music,
+    .n61M {
+        flex: 1; // This allows the children to grow and occupy equal space
+        text-align: center;
+        box-sizing: border-box; // Ensure padding doesn't increase the total width
+        .image-container {
+            position: relative; /* Set the container to relative positioning */
+            width: 100%; /* Ensure it takes the full width of the container */
+            height: 100%; /* Ensure it takes the full height of the container */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            display: flex; /* Add this line */
+            align-items: center; /* Add this line to center the image vertically */
+            justify-content: center; /* Add this line to center the image horizontally */
+            text-align: center;
+            border:1px dotted rgba(250, 250, 250, 0.15);
+            .heading{
+                font-size:40px;
+            }
+            
+            .para1{
+                position: absolute; /* Set the <p> elements to absolute positioning */
+                bottom: 57px; /* Position at the bottom of the container */
+                left: 0; /* Position at the left of the container */
+                margin: 0; /* Reset any default margin */
+                font-family: "Sharp Grotesk Book 25 Regular", sans-serif;
+                color: #fff;
+                font-size: 17px;
+                line-height: 23px;
+                font-weight: 400;
+            }
+            .para2{
+                position: absolute; /* Set the <p> elements to absolute positioning */
+                bottom: 0; /* Position at the bottom of the container */
+                left: 0; /* Position at the left of the container */
+            }
+        }
+    }
+
+    .warnerbros{
+        &_image{
+            max-width: 20%; 
+            height: 20%;
+            justify-content: center;
+            
+
+        }
+    }
+    .music{
+        &_image{
+            max-width:100%;
+            height:70%;
+            opacity: 0.6;
+            &:hover{
+                opacity:1;
+            }
+        }
+
+    }
+.warnerbros{
+        &_image{
+            max-width: 20%; 
+            height: 20%;
+
+        }
+    }
+    .music{
+        &_image{
+            max-width:100%;
+            height:50%;
+        }
+
+    }
+
+}
+
+
+    .skullandpeople{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height:100vh;
+        .skull{
+            height:70vh;
+            .skull_image{
+                transform: scale(0.3);  
+                opacity: 0.1;
+                transition: transform 0.3s;
+            }
+            
+        }
+    }
+}
+

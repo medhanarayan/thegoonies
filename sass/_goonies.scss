@@ -1,0 +1,136 @@
+.goonies {
+    overflow: hidden;
+    .characters-container {
+        z-index: 1000; 
+        .characters {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            width: 100%;
+            height: 100vh;
+            margin-bottom: 200px;
+
+            .mikey, .chunk, .data, .mouth {
+                width: 25%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+
+                img {
+                    max-width: 100%;
+                    height: 100vh;
+                    display: block;
+                    transition: transform 0.3s ease-in-out;
+                    opacity: 0.7;
+                    cursor: pointer;
+
+                    &:hover {
+                        transform: scaleY(1.1);
+                        opacity: 0.9;
+                    }
+                }
+
+                // Show .divtext when the image is hovered
+                img:hover + .divtext {
+                    display: block;
+                }
+
+                .divtext {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 10px;
+                    color: #fff;
+                    padding: 10px;
+                    display: none;
+                    .image_heading{
+                        margin-bottom: 4px;
+                        font-size: 26px;
+                        line-height: 26px;
+                        font-family: "Sharp Grotesk Book 25 Regular", sans-serif;
+                    }
+                    .image_para{
+                        margin-right: 9px;
+                        font-family:"Sharp Grotesk Book 25 Regular", sans-serif;
+                        color: #fff;
+                        font-size: 11px;
+                        text-decoration: none;
+                        
+                    }
+                }
+            }
+        }
+    }
+    .gooniesneversaydie {
+        position: relative;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top:0;
+        box-sizing: border-box;
+        margin-bottom: 100px;
+    .title{
+        position: absolute; /* Position the h1 absolutely within its nearest positioned ancestor */
+        top: 50%; /* Position it 50% from the top of the parent container */
+        left: 50%; /* Position it 50% from the left of the parent container */
+        transform: translate(-50%, -50%); /* Center the h1 both horizontally and vertically */
+        z-index: 1; /* Ensure the h1 appears on top of the image */
+        color: white; /* Optional: ensure the text is readable on top of the image */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: add a shadow for better readability */
+        font-size: 50px;
+    line-height: 44px;
+    font-weight: 700;
+    opacity: 0;
+    transition: opacity 0.5s;
+    }
+    
+    .coins_row_1,
+    .coins_row_2 {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        .coins_images_1
+        {
+            margin-left: 24rem;
+            img{
+                width:150px;
+                height:150px;
+            }
+           
+        }
+        .coins_images_3
+        {
+            margin-left: 10rem;
+           
+        }
+        .coins_images_2,.coins_images_4{
+            margin-right:15rem ;
+        }
+        .coins_images_4{
+            img{
+                width: 170px;
+                height:170px;
+            }
+        }
+        .coins_images_image{
+            width:100px;
+            height: 100px;
+        }
+    }
+    
+    .coins_images_long {
+        position: relative;
+        .coins_images_image_long{
+            width:230px;
+            height: 700px;
+                transform: rotate(30deg);
+                display: block;
+        }
+    }
+    
+}    
+}
